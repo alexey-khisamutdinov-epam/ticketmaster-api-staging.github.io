@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: bla.tm.DevSiteTestsRunner
+-------------------------------------------------------------------------------
+Tests run: 662, Failures: 5, Errors: 1, Skipped: 1, Time elapsed: 1,490.092 sec <<< FAILURE! - in bla.tm.DevSiteTestsRunner
+When check visibility and click <elementKey> element of SDKs page​(bla.tm.definitions.site.products_and_docs.PD_SDKsDefinition)  Time elapsed: 1.924 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Element is not clickable at point (801.4833374023438, 417). Other element would receive the click: <img src="/assets/img/products-and-docs/sdk-js-logo.png" alt=""> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-c4c14acc-7b83-4c64-901d-1cde511c15c7', ip: '172.17.0.15', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4a3a48e3-ecf2-4541-9231-4fef4073282c
+	at bla.tm.definitions.site.products_and_docs.PD_SDKsDefinition.checkIfElementVisibleAndClickIt(PD_SDKsDefinition.java:27)
+
+Scenario: |products-and-docs/sdks/| Verification for all the page's links  Time elapsed: 1.337 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+
+PD_SDKs.story  Time elapsed: 1.34 sec  <<< FAILURE!
+java.lang.AssertionError: story failed!
+
+Then found events contains <keyword> on Event Discovery Widget page​(bla.tm.definitions.site.widgets.EventDiscoveryWidgetDefinition)  Time elapsed: 3.922 sec  <<< FAILURE!
+java.lang.AssertionError: Poster windows does not contains STING, but has next text: NO LONGER ON SALE FOR WEB
+	at bla.tm.definitions.site.widgets.EventDiscoveryWidgetDefinition.checkThatFoundEventsContainsText(EventDiscoveryWidgetDefinition.java:60)
+
+Scenario: |/products-and-docs/widgets/event-discovery/| TECHNICAL TAB - Check that KEYWORD field functionality works properly  Time elapsed: 4.492 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+
+EventDiscoveryWidget.story  Time elapsed: 1.089 sec  <<< FAILURE!
+java.lang.AssertionError: story failed!
+
